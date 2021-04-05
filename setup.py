@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # flake8: noqa
+# bandit: noseq
 # -*- coding: utf-8 -*-
 
 # Note: To use the "upload" functionality of this file, you must:
@@ -55,14 +56,6 @@ class UploadCommand(Command):
         """Prints things in bold."""
         print("\033[1m{0}\033[0m".format(s))
 
-    def initialize_options(self):
-        """Docs? Contribution is welcome."""
-        pass
-
-    def finalize_options(self):
-        """Docs? Contribution is welcome."""
-        pass
-
     def run(self):
         """Docs? Contribution is welcome."""
         try:
@@ -82,6 +75,7 @@ class UploadCommand(Command):
         os.system("git push --tags")
 
         sys.exit()
+
 
 setup(
     name=NAME,
