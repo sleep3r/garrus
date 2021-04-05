@@ -102,9 +102,9 @@ setup(
     url=URL,
     download_url=URL,
     project_urls={
-        "Bug Tracker": URL,
-        "Documentation": URL,
-        "Source Code": URL,
+        "Bug Tracker": URL + "/issues",
+        "Documentation": URL + "/wiki",
+        "Source Code": URL ,
     },
     packages=find_packages(exclude=("tests",)),
     include_package_data=True,
