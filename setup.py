@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # flake8: noqa
-# bandit: noseq
 # -*- coding: utf-8 -*-
 
 # Note: To use the "upload" functionality of this file, you must:
