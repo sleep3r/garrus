@@ -1,4 +1,4 @@
 exclude: ./setup.py
 
 # (optional) list skipped tests here:
-skips: ['B101', 'B601']
+skips: ['B605']
