@@ -27,9 +27,9 @@ Garrus is a python framework for better confidence estimate of deep neural netwo
 
 Please use this bibtex if you want to cite this repository in your publications:
 
-    @misc{catalyst,
+    @misc{garrus,
         author = {Kalashnikov, Alexander},
-        title = {Deep neaural networks calibration framework},
+        title = {Deep neural networks calibration framework},
         year = {2021},
         publisher = {GitHub},
         journal = {GitHub repository},
