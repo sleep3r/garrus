@@ -7,8 +7,9 @@
 
 import io
 import os
-from shutil import rmtree
 import sys
+import subprocess
+from shutil import rmtree
 
 from setuptools import Command, find_packages, setup
 
@@ -64,14 +65,14 @@ class UploadCommand(Command):
             pass
 
         self.status("Building Source and Wheel (universal) distribution…")
-        os.system("{0} setup.py sdist bdist_wheel --universal".format(sys.executable))
+        subprocess.call("{0} setup.py sdist bdist_wheel --universal".format(sys.executable), shell=False)
 
         self.status("Uploading the package to PyPI via Twine…")
-        os.system("twine upload dist/*")
+        subprocess.call("twine upload dist/*", shell=False)
 
         self.status("Pushing git tags…")
-        os.system("git tag v{0}".format(load_version()))
-        os.system("git push --tags")
+        subprocess.call("git tag v{0}".format(load_version()), shell=False)
+        subprocess.call("git push --tags", shell=False)
 
         sys.exit()
 

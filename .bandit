@@ -1,3 +1,0 @@
-[bandit]
-exclude: setup.py
-skips: ['B605']
