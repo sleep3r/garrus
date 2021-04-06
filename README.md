@@ -18,7 +18,7 @@
 
 Garrus is a python framework for better confidence estimate of deep neural networks. Modern networks are overconfident estimators, that makes themselves unreliable and therefore limits the deployment of them in safety-critical applications.
 
-Garrus provides tools for high quality confidence estimation, helping networks to *know correctly what they do not know*. 
+Garrus provides tools for high quality confidence estimation, helping networks to **know correctly what they do not know**. 
 
 ----
 
@@ -76,8 +76,7 @@ Please use this bibtex if you want to cite this repository in your publications:
     }
  
  
-### References:
-||
+|### References:|
 |---|
 | [[1]](https://arxiv.org/pdf/1706.04599.pdf) Guo, Chuan, et al. "On calibration of modern neural networks." International Conference on Machine Learning. PMLR, 2017. APA |
 | [[2]](https://arxiv.org/pdf/2007.01458.pdf) Moon, Jooyoung, et al. "Confidence-aware learning for deep neural networks." international conference on machine learning. PMLR, 2020. |
