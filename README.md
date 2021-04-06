@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Garrus logo](https://github.com/sleep3r/pics/blob/main/garrus_pics/garrus-main.png?raw=true)](https://github.com/sleep3r/garrus)
+[![Garrus logo](https://github.com/sleep3r/pics/blob/main/garrus_pics/garrus-logo-big.png?raw=true)](https://github.com/sleep3r/garrus)
 
 **In the middle of some calibrations...**
 
