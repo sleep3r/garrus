@@ -20,11 +20,48 @@ Garrus is a python framework for better confidence estimate of deep neural netwo
 
 ----
 
-## Getting started
+## Installation:
+```bash
+pip install -U garrus
+```
 
+## Documentation:
+  - [0.1.0](https://github.com/sleep3r/garrus/wiki)
 
-### Citation
+## Roadmap:
+- Core:
+  - Calibration metrics:
+    - [ ] ECE
+    - [ ] MCE
+    - [ ] NLL
+    - [ ] Brier
+  - Ordinal Ranking Metrics:
+    - [ ] AURC
+    - [ ] E-AURC
+    - [ ] AUPR
+    - [ ] FPR-n%-TPR
+  - Visualizations:
+    - [ ] Reliability Diagram
+- Confidence Calibration:
+    - Scaling:
+      - [ ] Platt
+      - [ ] Temperature
+    - Binning: 
+      - [ ] Histogram
+      - [ ] Isotonic Regression
+      - [ ] Bayesian
+- Confidence Regularization:
+  - Losses:
+    - [ ] EP Focal Loss
+    - [ ] CRL
+  - [ ] Language Model Beam Search
+- Confidence Networks:
+  - [ ] ConfidNet
+  - [ ] GarrusNet
 
+---
+
+### Citation:
 Please use this bibtex if you want to cite this repository in your publications:
 
     @misc{garrus,
@@ -35,3 +72,11 @@ Please use this bibtex if you want to cite this repository in your publications:
         journal = {GitHub repository},
         howpublished = {\url{https://github.com/sleep3r/garrus}},
     }
+ 
+ 
+### References:
+|   |
+|---|
+| [[1]](https://arxiv.org/pdf/1706.04599.pdf) Guo, Chuan, et al. "On calibration of modern neural networks." International Conference on Machine Learning. PMLR, 2017. APA |
+| [[2]](https://arxiv.org/pdf/2007.01458.pdf) Moon, Jooyoung, et al. "Confidence-aware learning for deep neural networks." international conference on machine learning. PMLR, 2020. |
+| [[3]](https://arxiv.org/pdf/1909.10155.pdf) Kumar, Ananya, Percy Liang, and Tengyu Ma. "Verified uncertainty calibration." arXiv preprint arXiv:1909.10155 (2019). |
