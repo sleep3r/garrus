@@ -33,15 +33,14 @@ pip install -U garrus
 ## Roadmap:
 - Core:
   - Calibration metrics:
-    - [ ] ECE
-    - [ ] MCE
-    - [ ] NLL
-    - [ ] Brier
+    - [x] ECE
+    - [x] NLL
+    - [x] Brier
   - Ordinal Ranking Metrics:
-    - [ ] AURC
-    - [ ] E-AURC
-    - [ ] AUPR
-    - [ ] FPR-n%-TPR
+    - [x] AURC
+    - [x] E-AURC
+    - [x] AUPRE
+    - [x] FPR-n%-TPR
   - Visualizations:
     - [ ] Reliability Diagram
 - Confidence Calibration:

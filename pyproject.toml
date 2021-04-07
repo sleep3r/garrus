@@ -6,6 +6,9 @@ authors = ["sleep3r <sleep3r@icloud.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+numpy = "^1.20.2"
+torch = "^1.8.1"
+sklearn = "^0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
