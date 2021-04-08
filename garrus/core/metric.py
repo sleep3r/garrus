@@ -5,7 +5,7 @@ import numpy as np
 
 
 class BaseMetric(ABC):
-    def __init__(self, n_bins: int) -> None:
+    def __init__(self, n_bins: int):
         self.n_bins = n_bins
 
     @abstractmethod

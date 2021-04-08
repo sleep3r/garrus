@@ -43,7 +43,8 @@ pip install -U garrus
     - [x] AUPRE
     - [x] FPR-n%-TPR
   - Visualizations:
-    - [ ] Reliability Diagram
+    - [x] Reliability Diagram
+    - [x] Confidence Histogram
   - [ ] Garrus Profiling
 - Confidence Calibration:
     - Scaling:
@@ -55,8 +56,8 @@ pip install -U garrus
       - [ ] Bayesian
 - Confidence Regularization:
   - Losses:
-    - [ ] EP Focal Loss
-    - [ ] CRL
+    - [ ] Correctness Ranking Loss
+    - [ ] Focal Entropy Penalized Loss
   - [ ] Language Model Beam Search
 - Confidence Networks:
   - [ ] ConfidNet
