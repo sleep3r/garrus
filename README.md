@@ -28,7 +28,8 @@ pip install -U garrus
 ```
 
 ## Documentation:
-  - [0.1.0](https://github.com/sleep3r/garrus/wiki)
+  - [master](https://github.com/sleep3r/garrus/wiki)
+  - [develop](https://github.com/sleep3r/garrus/wiki)
 
 ## Roadmap:
 - Core:
@@ -43,6 +44,7 @@ pip install -U garrus
     - [x] FPR-n%-TPR
   - Visualizations:
     - [ ] Reliability Diagram
+  - [ ] Garrus Profiling
 - Confidence Calibration:
     - Scaling:
       - [ ] Platt
