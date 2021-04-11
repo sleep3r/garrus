@@ -10,6 +10,8 @@ numpy = "^1.20.2"
 torch = "^1.8.1"
 sklearn = "^0.0"
 plotly = "^4.14.3"
+flake8 = "^3.9.0"
+tqdm = "^4.60.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
