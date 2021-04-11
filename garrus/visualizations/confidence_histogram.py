@@ -13,7 +13,7 @@ class ConfidenceHistogram(BaseVisualization):
         fig.add_trace(
             go.Histogram(
                 x=confidences,
-                xbins=dict(start=0, end=1.0, size=0.1),
+                xbins=dict(start=0, end=1.0, size=1 / self.n_bins),
                 name="Amount of samples"
             )
         )
