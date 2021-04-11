@@ -13,9 +13,25 @@ class BaseVisualization(ABC):
 
     @abstractmethod
     def _plot(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs: Union[int, float]) -> None:
+        """
+        Private visualization plotting method.
+
+        Args:
+             confidences (np.ndarray): array of confidence levels for each sample;
+             accuracies (np.ndarray): array of 0/1 labels of correctness for each sample;
+             kwargs (Any): methods parameters.
+        """
         pass
 
     def plot(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs: Union[int, float]) -> None:
+        """
+        Main visualization plotting method.
+
+        Args:
+             confidences (np.ndarray): array of confidence levels for each sample;
+             accuracies (np.ndarray): array of 0/1 labels of correctness for each sample;
+             kwargs (Any): methods parameters.
+        """
         assert confidences.shape[0] == accuracies.shape[0], "Number of conf and acc samples is not equal."
         assert accuracies.size > 0, "No samples provided."
 

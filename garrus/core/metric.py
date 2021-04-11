@@ -1,15 +1,25 @@
-from typing import Union
+from typing import Union, Optional
 from abc import ABC, abstractmethod
 
 import numpy as np
 
 
 class BaseMetric(ABC):
-    def __init__(self, n_bins: int):
+    def __init__(self, n_bins: Optional[int] = None):
         self.n_bins = n_bins
 
     @abstractmethod
     def _compute(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs) -> float:
+        """
+        Private metric computation method.
+
+        Args:
+             confidences (np.ndarray): array of confidence levels for each sample;
+             accuracies (np.ndarray): array of 0/1 labels of correctness for each sample;
+             kwargs (Any): methods parameters.
+        Returns:
+            float: calculated metric.
+        """
         pass
 
     def compute(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs: Union[int, float]) -> float:
