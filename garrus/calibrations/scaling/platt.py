@@ -4,6 +4,7 @@ import numpy as np
 from scipy.optimize import minimize
 from torch.nn import Softmax
 
+from garrus.const import EPS
 from garrus.core import BaseCalibration
 from garrus.metrics import NLL
 
@@ -17,7 +18,7 @@ class PlattCalibration(BaseCalibration):
 
         weights_num = 2
         x0 = np.ones(weights_num)
-        x0[0] = self.EPS
+        x0[0] = EPS
 
         result = minimize(fun=self._loss_func, x0=x0, args=(X, accuracies))
 
