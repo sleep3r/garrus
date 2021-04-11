@@ -28,8 +28,8 @@ pip install -U garrus
 ```
 
 ## Documentation:
-  - [master](https://github.com/sleep3r/garrus/wiki)
-  - [develop](https://github.com/sleep3r/garrus/wiki)
+  - [master](https://github.com/sleep3r/garrus/wiki/Master-documentation)
+  - [develop](https://github.com/sleep3r/garrus/wiki/Develop-documentation)
 
 ## Roadmap:
 - Core:
@@ -48,12 +48,11 @@ pip install -U garrus
   - [ ] Garrus Profiling
 - Confidence Calibration:
     - Scaling:
-      - [ ] Platt
-      - [ ] Temperature
+      - [x] Platt
+      - [x] Temperature
     - Binning: 
       - [ ] Histogram
       - [ ] Isotonic Regression
-      - [ ] Bayesian
 - Confidence Regularization:
   - Losses:
     - [ ] Correctness Ranking Loss
