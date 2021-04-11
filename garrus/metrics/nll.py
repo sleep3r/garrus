@@ -1,5 +1,7 @@
 import numpy as np
+from scipy.special import expit
 
+from garrus.const import EPS
 from garrus.core import BaseMetric
 
 
@@ -11,12 +13,18 @@ class NLL(BaseMetric):
     """
 
     def _compute(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs) -> float:
-        log_conf = np.log(confidences)
-        res = np.zeros_like(accuracies, dtype=float)
+        if confidences.ndim == 2:
+            confidences = confidences[:, -1]
 
-        for i in range(accuracies.shape[0]):
-            res[i] = log_conf[i][accuracies[i]]
+        confidences = expit(confidences)
+        confidences = np.clip(confidences, EPS, 1. - EPS)  # noqa
 
-        nll = -res.sum() / res.shape[0]
-        print("NLL {0:.3f} ".format(nll.item() * 10))
-        return float(nll.item())
+        if confidences.ndim == 2:
+            confidences = np.array(confidences[:, -1])
+
+        cross_entropy = np.multiply(accuracies, np.log(confidences)) + \
+                        np.multiply(1. - accuracies, np.log(1 - confidences))
+
+        log_likelihood = np.sum(cross_entropy)  # noqa
+        nll = -log_likelihood / accuracies.shape[0]
+        return nll

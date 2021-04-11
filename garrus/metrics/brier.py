@@ -12,5 +12,4 @@ class Brier(BaseMetric):
 
     def _compute(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs) -> float:
         brier_score = np.mean(np.sum((confidences - accuracies) ** 2, axis=1))  # noqa
-        print('Brier {0:.2f}'.format(brier_score * 100))
         return float(brier_score)

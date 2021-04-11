@@ -16,5 +16,4 @@ class FPR_n_TPR(BaseMetric):
         idx_tpr = np.argmin(np.abs(tpr - kwargs["n"]))  # noqa
         fpr_n_tpr = fpr[idx_tpr]
 
-        print('FPR {0:.2f}'.format(fpr_n_tpr * 100))
         return float(fpr_n_tpr)

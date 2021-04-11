@@ -35,5 +35,4 @@ class AURC(BaseMetric):
             risk_coverage_curve_area += risk_value * (1 / len(risk_list))
 
         aurc = risk_coverage_curve_area
-        print("AURC {0:.2f}".format(aurc * 1000))
         return float(aurc)

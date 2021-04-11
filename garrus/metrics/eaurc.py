@@ -23,5 +23,4 @@ class EAURC(BaseMetric):
             risk_coverage_curve_area += risk_value * (1 / len(risk_list))
 
         eaurc = risk_coverage_curve_area - optimal_risk_area
-        print("EAURC {0:.2f}".format(eaurc * 1000))
         return float(eaurc)

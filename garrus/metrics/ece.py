@@ -28,5 +28,4 @@ class ECE(BaseMetric):
 
                 ece += np.abs(avg_confidence_in_bin - accuracy_in_bin) * prop_in_bin
 
-        print("ECE {0:.3f} ".format(ece.item() * 100))
         return float(ece.item())
