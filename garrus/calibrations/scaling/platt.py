@@ -9,11 +9,11 @@ from garrus.core import BaseCalibration
 from garrus.metrics import NLL
 
 
-class PlattCalibration(BaseCalibration):
+class Platt(BaseCalibration):
     def __init__(self):
         super().__init__()
 
-    def _fit(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs) -> PlattCalibration:
+    def _fit(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs) -> Platt:
         X = self._scipy_transform_data(confidences)
 
         weights_num = 2
