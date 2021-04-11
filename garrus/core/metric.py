@@ -20,7 +20,6 @@ class BaseMetric(ABC):
         Returns:
             float: calculated metric.
         """
-        pass
 
     def compute(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs: Union[int, float]) -> float:
         """

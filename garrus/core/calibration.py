@@ -26,7 +26,6 @@ class BaseCalibration(BaseEstimator, TransformerMixin):
              accuracies (np.ndarray): array of 0/1 labels of correctness for each sample;
              kwargs (Any): methods parameters.
         """
-        pass
 
     def fit(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs) -> BaseCalibration:
         """
@@ -52,7 +51,6 @@ class BaseCalibration(BaseEstimator, TransformerMixin):
              confidences (np.ndarray): array of confidence levels for each sample;
              kwargs (Any): methods parameters.
         """
-        pass
 
     def transform(self, confidences: np.ndarray, **kwargs) -> np.ndarray:
         """

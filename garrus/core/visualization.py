@@ -21,7 +21,6 @@ class BaseVisualization(ABC):
              accuracies (np.ndarray): array of 0/1 labels of correctness for each sample;
              kwargs (Any): methods parameters.
         """
-        pass
 
     def plot(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs: Union[int, float]) -> None:
         """
