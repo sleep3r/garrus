@@ -4,7 +4,7 @@ from sklearn import metrics
 from garrus.core import BaseMetric
 
 
-class FPR_n_TPR(BaseMetric):
+class FPRnTPR(BaseMetric):
     """False positive rate at n% true positive rate."""
 
     def _compute(self, confidences: np.ndarray, accuracies: np.ndarray, **kwargs: float) -> float:

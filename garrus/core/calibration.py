@@ -84,7 +84,7 @@ class BaseCalibration(BaseEstimator, TransformerMixin):
 
     def _update_weights(self, X: np.ndarray, weights: np.ndarray):
         """
-        Calculates logits by given data input and weights.
+        Performs weights update by given data input and weights.
         """
         bias = weights[0]
         weights = np.array(weights[1:]).reshape(-1, 1)
