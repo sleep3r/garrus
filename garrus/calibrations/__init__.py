@@ -1,3 +1,3 @@
-from .scaling import PlattCalibration
+from .scaling import Platt
 
-__all__ = [PlattCalibration]
+__all__ = ["Platt"]

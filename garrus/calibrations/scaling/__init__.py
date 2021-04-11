@@ -1,3 +1,3 @@
 from .platt import Platt
 
-__all__ = [Platt]
+__all__ = ["Platt"]
