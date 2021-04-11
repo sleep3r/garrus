@@ -28,8 +28,8 @@ pip install -U garrus
 ```
 
 ## Documentation:
-  - [master](https://github.com/sleep3r/garrus/wiki/Master-documentation)
-  - [develop](https://github.com/sleep3r/garrus/wiki/Develop-documentation)
+  - [master v0.1.0](https://github.com/sleep3r/garrus/wiki/0.1.0@master-documentation)
+  - [develop v0.2.0](https://github.com/sleep3r/garrus/wiki/0.1.0@develop-documentation)
 
 ## Roadmap:
 - Core:
