@@ -14,6 +14,8 @@
 
 [![python](https://img.shields.io/badge/python_3.6-passing-success)](https://github.com/sleep3r/garrus/badge.svg?branch=master&event=push)
 [![python](https://img.shields.io/badge/python_3.7-passing-success)](https://github.com/sleep3r/garrus/badge.svg?branch=master&event=push)
+[![python](https://img.shields.io/badge/python_3.8-passing-success)](https://github.com/sleep3r/garrus/badge.svg?branch=master&event=push)
+
 </div>
 
 Garrus is a python framework for better confidence estimate of deep neural networks. Modern networks are overconfident estimators, that makes themselves unreliable and therefore limits the deployment of them in safety-critical applications.
@@ -28,8 +30,8 @@ pip install -U garrus
 ```
 
 ## Documentation:
-  - [master v0.1.0](https://github.com/sleep3r/garrus/wiki/0.1.0@master-documentation)
-  - [develop v0.2.0](https://github.com/sleep3r/garrus/wiki/0.1.0@develop-documentation)
+  - [master v0.2.0](https://github.com/sleep3r/garrus/wiki/0.2.0@master-documentation)
+  - [develop v0.2.0](https://github.com/sleep3r/garrus/wiki/0.2.0@develop-documentation)
 
 ## Roadmap:
 - Core:
