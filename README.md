@@ -12,9 +12,9 @@
 [![Telegram](https://img.shields.io/badge/author-telegram-blue)](https://t.me/sleep3r)
 [![Github contributors](https://img.shields.io/github/contributors/sleep3r/garrus.svg?logo=github&logoColor=white)](https://github.com/sleep3r/garrus/graphs/contributors)
 
-[![python](https://img.shields.io/badge/python_3.6-passing-success)](https://github.com/sleep3r/garrus/badge.svg?branch=master&event=push)
-[![python](https://img.shields.io/badge/python_3.7-passing-success)](https://github.com/sleep3r/garrus/badge.svg?branch=master&event=push)
-[![python](https://img.shields.io/badge/python_3.8-passing-success)](https://github.com/sleep3r/garrus/badge.svg?branch=master&event=push)
+[![python](https://img.shields.io/badge/python_3.6-passing-success)](https://github.com/sleep3r/garrus/badge.svg?branch=main&event=push)
+[![python](https://img.shields.io/badge/python_3.7-passing-success)](https://github.com/sleep3r/garrus/badge.svg?branch=main&event=push)
+[![python](https://img.shields.io/badge/python_3.8-passing-success)](https://github.com/sleep3r/garrus/badge.svg?branch=main&event=push)
 
 </div>
 
