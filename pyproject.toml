@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "garrus"
-version = "0.2.2"
+version = "0.2.4"
 description = ""
 authors = ["sleep3r <sleep3r@icloud.com>"]
 
