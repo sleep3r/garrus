@@ -14,7 +14,7 @@ class ReliabilityDiagram(BaseVisualization):
         mean_acc_by_bin: List[float] = []
         samples_pct: List[float] = []
 
-        bin_idxs = np.digitize(confidences, np.histogram_bin_edges(confidences, bins=self.n_bins))
+        bin_idxs = np.digitize(confidences, np.histogram_bin_edges(confidences, bins=self.n_bins, range=(0, 1)))
 
         for bin_idx in range(1, 11):
             mean_conf_by_bin.append(confidences[bin_idxs == bin_idx].mean() \
