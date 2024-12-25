@@ -1,20 +1,19 @@
 [tool.poetry]
 name = "garrus"
-version = "0.2.4"
+version = "0.3.0"
 description = ""
 authors = ["sleep3r <sleep3r@icloud.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
-numpy = "^1.20.2"
-torch = "^1.8.1"
-sklearn = "^0.0"
-plotly = "^4.14.3"
-flake8 = "^3.9.0"
-tqdm = "^4.60.0"
+python = "^3.12"
+numpy = "^1.26.4"
+torch = "^2.5.1"
+scikit-learn = "^1.6.0"
+plotly = "^5.24.0"
+tqdm = "^4.66.5"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^8.3.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
