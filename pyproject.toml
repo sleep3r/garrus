@@ -1,8 +1,20 @@
 [tool.poetry]
 name = "garrus"
 version = "0.3.0"
-description = ""
+description = "A Python package for machine learning and data visualization"
 authors = ["sleep3r <sleep3r@icloud.com>"]
+readme = "README.md"
+homepage = "https://github.com/sleep3r/garrus"
+repository = "https://github.com/sleep3r/garrus"
+license = "MIT"
+keywords = ["machine-learning", "data-visualization", "pytorch"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"
